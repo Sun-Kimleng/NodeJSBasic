@@ -7,3 +7,5 @@ global.setTimeout(()=>{
 //get the location folder and file
 console.log(__dirname);
 console.log(__filename);
+
+//command: node global //to run 
