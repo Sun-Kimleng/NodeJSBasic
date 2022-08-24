@@ -1,0 +1,15 @@
+<html lang="en">
+<%- include('./partials/head.ejs') %>
+<body>
+    <!-- import navbar -->
+    <%- include('./partials/nav.ejs') %>
+    
+    <h1>Hello</h1>
+    <% if(blogs.length > 0){ %>
+        <% blogs.forEach(blog => { %>
+        <h3><%= blog.title %></h3>
+        <p><%= blog.snippet %></p>
+        <% }); %>
+    <% } %>
+</body>
+</html>
